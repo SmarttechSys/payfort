@@ -10,7 +10,7 @@ Add this to pubspec.yaml
 
 ```dart
 dependencies:
-  payfort_plugin: ^0.2.0+5
+  payfort_plugin: ^0.2.0+6
 ```
 
 ### Usage
@@ -24,9 +24,9 @@ PayfortPlugin.getID.then((deviceID) => { //use this deviceID to  send it to your
                               'LANGUAGE',
                               'EMAIL',
                               'AMOUNT',
-                              'PURCHASE',
+                              'COMMAND',
                               'CURRENCY',
-                              'MODE' //zero for test mode and one for production
+                              'MODE' // 0 for test mode and 1 for production
                                ).then((value) => {
                                 // value object contains payfort response, such card number, transaction reference, ...
                                 debugPrint('card number is ${value['card_number']}')
