@@ -1,0 +1,55 @@
+group 'com.agm.payfort_plugin.payfort_plugin'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        maven { url 'https://android-sdk.payfort.com' }
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 30
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation ("com.amazon:fortpayment:+:release@aar")
+            { transitive = true }
+    api 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.victor:lib:1.0.1'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.shamanland:fonticon:0.1.8'
+    api('com.nispok:snackbar:2.11.+') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    api 'com.google.guava:guava:19.0'
+    api 'org.bouncycastle:bcprov-jdk16:1.46'
+}
