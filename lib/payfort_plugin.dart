@@ -21,7 +21,7 @@ class PayfortPlugin {
       String name,
       String language,
       String email,
-      String amount,
+      double amount,
       String command,
       String currency,
       String mode,
@@ -31,7 +31,7 @@ class PayfortPlugin {
     Map? result = await _channel.invokeMethod('initPayFort', {
       'sdkToken': sdkToken,
       'merchantRef': merchantRef,
-      'amount': amount.toString(),
+      'amount': amount,
       'email': email,
       'lang': language,
       'command': command,
