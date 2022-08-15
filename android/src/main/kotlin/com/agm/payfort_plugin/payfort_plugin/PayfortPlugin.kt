@@ -50,7 +50,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           var name = call.argument<String>("name")
           var lang = call.argument<String>("lang")
           var command = call.argument<String>("command")
-          var amount = call.argument<int>("amount")
+          var amount = call.argument<Int>("amount")
           var email = call.argument<String>("email")
           var currency = call.argument<String>("currency")!!
           var mode = call.argument<String>("mode")!!
@@ -70,7 +70,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
           requestMap["currency"] = currency!!
-          requestMap["amount"] = amount!!
+          requestMap["amount"] = amount ?: 0
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
           requestMap["customer_name"] = name!!
