@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,16 +24,24 @@
   <component name="ChangeListManager">
     <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftPayfortPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftPayfortPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/payfort_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/payfort_plugin.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,6 +54,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
@@ -50,7 +63,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -59,6 +72,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -107,6 +121,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin" />
+      <path value="$PROJECT_DIR$/payfort_plugin" />
+    </ignored-roots>
     <MESSAGE value="adding android" />
     <MESSAGE value="adding android and ios" />
     <MESSAGE value="- Document code" />
@@ -116,35 +134,5 @@
     <MESSAGE value="- Code enhancement." />
     <MESSAGE value="- Changing plugin repo" />
     <option name="LAST_COMMIT_MESSAGE" value="- Changing plugin repo" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="198" y="25" key="CommitChangelistDialog2" timestamp="1626201185293">
-      <screen x="0" y="25" width="1280" height="710" />
-    </state>
-    <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1626135505035" />
-    <state x="198" y="25" key="CommitChangelistDialog2/0.25.1280.706@0.25.1280.706" timestamp="1625857772949" />
-    <state x="198" y="25" key="CommitChangelistDialog2/0.25.1280.709@0.25.1280.709" timestamp="1625932054177" />
-    <state x="198" y="25" key="CommitChangelistDialog2/0.25.1280.710@0.25.1280.710" timestamp="1626201185293" />
-    <state x="256" y="25" width="997" height="709" key="SettingsEditor" timestamp="1625931694289">
-      <screen x="0" y="25" width="1280" height="709" />
-    </state>
-    <state x="256" y="25" width="997" height="709" key="SettingsEditor/0.25.1280.709@0.25.1280.709" timestamp="1625931694289" />
-    <state x="448" y="88" key="SettingsEditor/0.25.1920.970@0.25.1920.970" timestamp="1624475546563" />
-    <state x="240" y="116" key="Vcs.Push.Dialog.v2" timestamp="1626201197208">
-      <screen x="0" y="25" width="1280" height="710" />
-    </state>
-    <state x="240" y="102" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1626135523898" />
-    <state x="240" y="115" key="Vcs.Push.Dialog.v2/0.25.1280.706@0.25.1280.706" timestamp="1625857795097" />
-    <state x="240" y="115" key="Vcs.Push.Dialog.v2/0.25.1280.709@0.25.1280.709" timestamp="1625932106625" />
-    <state x="240" y="116" key="Vcs.Push.Dialog.v2/0.25.1280.710@0.25.1280.710" timestamp="1626201197208" />
-    <state x="100" y="124" width="1080" height="508" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1626200424817">
-      <screen x="0" y="25" width="1280" height="710" />
-    </state>
-    <state x="100" y="124" width="1080" height="508" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1280.710@0.25.1280.710" timestamp="1626200424817" />
-    <state x="100" y="125" width="1080" height="510" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1280.714@0.25.1280.714" timestamp="1626198914279" />
-    <state x="298" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1626134957383">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="298" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800@0.0.1280.800" timestamp="1626134957383" />
   </component>
 </project>

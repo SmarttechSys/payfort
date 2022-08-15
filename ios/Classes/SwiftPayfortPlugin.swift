@@ -30,15 +30,14 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
         let email = args["email"]
         let currency = args["currency"]
         let mode = args["mode"]
+        let merchant_extra = args["merchant_extra"]
+        let merchant_extra1 = args["merchant_extra1"]
+        let payment_option = args["payment_option"]
         var payFort:PayFortController
         if mode == "0" {
              payFort = PayFortController.init(enviroment: .sandBox)
-            //print("test")
-
         }else{
              payFort = PayFortController.init(enviroment: .production)
-            //print("production")
-
         }
 
 
@@ -51,8 +50,10 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
         request.setValue(merchantRef, forKey: "merchant_reference")
         request.setValue(token , forKey: "sdk_token")
         request.setValue(name, forKey: "customer_name")
+        request.setValue(merchant_extra, forKey: "merchant_extra")
+        request.setValue(merchant_extra1, forKey: "merchant_extra1")
+        request.setValue(payment_option, forKey: "payment_option")
 
-        //print("amount ios"+amount!+currency!)
         payFort.isShowResponsePage = true
         payFort.callPayFort(withRequest: request as! [String : String], currentViewController: controller,
                             success: { (requestDic, responeDic) in

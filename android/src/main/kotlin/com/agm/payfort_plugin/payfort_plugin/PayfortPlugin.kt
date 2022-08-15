@@ -23,10 +23,6 @@ import java.util.HashMap
 
 /** PayfortPlugin */
 class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
-  /// The MethodChannel that will the communication between Flutter and native Android
-  ///
-  /// This local reference serves to register the plugin with the Flutter Engine and unregister it
-  /// when the Flutter Engine is detached from the Activity
   private lateinit var channel : MethodChannel
   private lateinit var context: Context
   private lateinit var activity: Activity
@@ -58,33 +54,32 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           var email = call.argument<String>("email")
           var currency = call.argument<String>("currency")!!
           var mode = call.argument<String>("mode")!!
+          var merchantExtra = call.argument<String>("merchant_extra")!!
+          var merchantExtra1 = call.argument<String>("merchant_extra1")!!
+          var paymentOption = call.argument<String>("payment_option")!!
           var envoirenment = if (mode == "0"){
             FortSdk.ENVIRONMENT.TEST
           }else{
             FortSdk.ENVIRONMENT.PRODUCTION
           }
-//          Log.e("environment", "env $envoirenment _ $mode")
-//
-//          Log.e("native sdk token", token!!)
-//          Log.e("native merchant", merchantRef!!)
           fortCallback = FortCallBackManager.Factory.create() as FortCallback
           deviceId = FortSdk.getDeviceId(activity)!!
-         // Log.d("DeviceId", deviceId)
 
           val fortrequest = FortRequest()
           val requestMap: MutableMap<String, Any> = HashMap()
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
           requestMap["currency"] = currency
-          requestMap["amount"] = 100
-          Log.d("amount", "am $amount $currency")
-
+          requestMap["amount"] = amount
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
           requestMap["customer_name"] = name!!
           requestMap["sdk_token"] = token!!
+          requestMap["merchant_extra"] = merchantExtra!!
+          requestMap["merchant_extra1"] = merchantExtra1!!
+          requestMap["payment_option"] = paymentOption!!
           fortrequest.requestMap = requestMap
-          fortrequest.isShowResponsePage = true // to [display/use] the SDK response page
+          fortrequest.isShowResponsePage = true
           try {
             FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
