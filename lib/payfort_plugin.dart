@@ -21,7 +21,7 @@ class PayfortPlugin {
       String name,
       String language,
       String email,
-      double amount,
+      String amount,
       String command,
       String currency,
       String mode,

@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="- adding merchant_extra, merchant_extra1 and payment_option" />
+    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="convert amount to double">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/payfort_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/payfort_plugin.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660566996406</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="convert amount to double">
+      <created>1660567527565</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660567527565</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +187,7 @@
     <MESSAGE value="- Code enhancement." />
     <MESSAGE value="- Changing plugin repo" />
     <MESSAGE value="- adding merchant_extra, merchant_extra1 and payment_option" />
-    <option name="LAST_COMMIT_MESSAGE" value="- adding merchant_extra, merchant_extra1 and payment_option" />
+    <MESSAGE value="convert amount to double" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert amount to double" />
   </component>
 </project>
