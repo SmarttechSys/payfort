@@ -69,8 +69,8 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           val requestMap: MutableMap<String, Any> = HashMap()
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
-          requestMap["currency"] = currency
-          requestMap["amount"] = amount
+          requestMap["currency"] = currency!!
+          requestMap["amount"] = amount!!
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
           requestMap["customer_name"] = name!!
