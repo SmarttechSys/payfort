@@ -70,7 +70,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
           requestMap["currency"] = currency!!
-          requestMap["amount"] = amount.toInt()!!
+          requestMap["amount"] = amount.toInt()
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
           requestMap["customer_name"] = name!!
