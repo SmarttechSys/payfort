@@ -77,7 +77,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           requestMap["merchant_extra1"] = merchantExtra1!!
           requestMap["payment_option"] = paymentOption!!
           fortrequest.requestMap = requestMap
-          fortrequest.isShowResponsePage = false
+          fortrequest.isShowResponsePage = true
           try {
             FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
