@@ -40,8 +40,6 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     when (call.method) {
         "getID" -> {
-          Log.e("execute getID", "executing")
-
           result.success(FortSdk.getDeviceId(activity))
         }
         "initPayFort" -> {
@@ -79,22 +77,19 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           requestMap["merchant_extra1"] = merchantExtra1!!
           requestMap["payment_option"] = paymentOption!!
           fortrequest.requestMap = requestMap
-          fortrequest.isShowResponsePage = true
+          fortrequest.isShowResponsePage = false
           try {
-            FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
+            FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 222, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
-                Log.d("Cancelled", responseMap.toString())
-                result.success(responseMap)
+                result.success("canceled")
               }
 
               override fun onSuccess(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                Log.i("Success", fortResponseMap.toString())
-                result.success(fortResponseMap)
+                result.success("success")
               }
 
               override fun onFailure(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                Log.e("Failure", fortResponseMap.toString())
-                result.success(fortResponseMap)
+                result.success("failed")
               }
             })
           } catch (e: Exception) {

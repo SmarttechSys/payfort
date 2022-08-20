@@ -22,8 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="convert amount to double">
+    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="delete example app">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/payfort_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payfort_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/payfort-master/example" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660569131172</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="delete example app">
+      <created>1660659604272</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660659604272</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +203,7 @@
     <MESSAGE value="- Changing plugin repo" />
     <MESSAGE value="- adding merchant_extra, merchant_extra1 and payment_option" />
     <MESSAGE value="convert amount to double" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert amount to double" />
+    <MESSAGE value="delete example app" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete example app" />
   </component>
 </project>
