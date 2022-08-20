@@ -81,15 +81,15 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           try {
             FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
-                result.success({"result": "canceled" })
+                result.success(mapOf("result" to "canceled"))
               }
 
               override fun onSuccess(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                result.success({ "result": "success" })
+                result.success(mapOf("result" to "success"))
               }
 
               override fun onFailure(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                result.success({"result": "failed" })
+                result.success(mapOf("result" to "failed"))
               }
             })
           } catch (e: Exception) {
