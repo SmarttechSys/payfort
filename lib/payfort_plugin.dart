@@ -18,7 +18,6 @@ class PayfortPlugin {
   static Future<Map?> performPaymentRequest(
       String merchantRef,
       String sdkToken,
-      String name,
       String language,
       String email,
       String amount,
@@ -35,7 +34,6 @@ class PayfortPlugin {
       'email': email,
       'lang': language,
       'command': command,
-      'name': name,
       'currency': currency,
       'mode': mode,
       "merchant_extra": merchantExtra,
