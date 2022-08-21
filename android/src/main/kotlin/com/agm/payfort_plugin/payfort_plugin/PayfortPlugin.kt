@@ -45,7 +45,6 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
         "initPayFort" -> {
           var token = call.argument<String>("sdkToken")
           var merchantRef = call.argument<String>("merchantRef")
-          var name = call.argument<String>("name")
           var lang = call.argument<String>("lang")
           var command = call.argument<String>("command")
           var amount = call.argument<String>("amount")
@@ -71,7 +70,6 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           requestMap["amount"] = amount?.toInt() ?: 0
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
-          requestMap["customer_name"] = name!!
           requestMap["sdk_token"] = token!!
           requestMap["merchant_extra"] = merchantExtra!!
           requestMap["merchant_extra1"] = merchantExtra1!!
@@ -110,11 +108,11 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
 
 
   override fun onDetachedFromActivity() {
-    TODO("Not yet implemented")
+
   }
 
   override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
-    TODO("Not yet implemented")
+
   }
 
   override fun onAttachedToActivity(binding: ActivityPluginBinding) {
@@ -122,6 +120,6 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
   }
 
   override fun onDetachedFromActivityForConfigChanges() {
-    TODO("Not yet implemented")
+
   }
 }
